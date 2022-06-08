@@ -1,5 +1,8 @@
 # EdgeRedirector
+The program redirect any url disguise under "microsoft-edge:" protocol to the original protocol, which result in whatever browser you set as default to be open.  An example of how this work is, it will allow Windows 10 and 11 widget to open link in Chrome instead.
+
 This short snippet of code is inspired by the work done by @da2x ([EdgeDeflector](https://github.com/da2x/EdgeDeflector)), the problem with his implementation is it apparently got blocked by Microsoft.  
+
 Microsoft should theoretically never be able to block my implementation since I basically pretending to be Microsoft Edge by replacing the executable.  Now I am not familiar enough with all the different ways Windows uses "microsoft-edge:" protocol, but will look to cover all the possibilities (some of which will result in actually passing it to Microsoft Edge).
 
 # Compiling
